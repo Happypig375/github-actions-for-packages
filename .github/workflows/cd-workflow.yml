@@ -60,5 +60,5 @@ jobs:
     - name: Build, Tag, Push
       uses: mattdavis0351/actions/docker-gpr@v1.3.0
       with:
-        repo-token: 2c43fe571fbe0436c50af1192afe193ebf6bbfcf
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
         image-name: tic-tac-toe
