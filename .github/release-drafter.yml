@@ -20,9 +20,9 @@ categories:
   - title: '🧰 Maintenance'
     label: 'Type/Housekeeping'
 change-template: |
-  - <details><summary>$TITLE (#$NUMBER) @$AUTHOR'</summary>
-    $BODY
-    </details>
+  <details><summary>$TITLE (#$NUMBER) @$AUTHOR'</summary>
+  $BODY
+  </details>
 no-changes-template: '* (No changes)'
 prerelease: true
 version-resolver:
