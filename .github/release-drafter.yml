@@ -20,7 +20,7 @@ categories:
   - title: '🧰 Maintenance'
     label: 'Type/Housekeeping'
 change-template: |
-  <details><summary>$TITLE (#$NUMBER) @$AUTHOR'</summary>
+  <details><summary>$TITLE (#$NUMBER) @$AUTHOR</summary>
   $BODY
   </details>
 no-changes-template: '* (No changes)'
