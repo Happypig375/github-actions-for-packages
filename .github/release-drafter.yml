@@ -16,7 +16,7 @@ exclude-labels:
   - 'Version/None'
 prerelease: true
 template: |
-  ## Changes from $PREVIOUS_TAG
+  ## Changes from $PREVIOUS_TAG (Recently merged first)
   $CHANGES
   
   ## Contributors
