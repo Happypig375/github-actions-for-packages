@@ -41,5 +41,6 @@ change-template: |
   </details>
 no-changes-template: '* (No changes)'
 replacers:
+  # We don't support nested <summary> and <details> so we add a (?!<details>|<summary>)
   - search: '/<details><summary>((?:(?!<details>|<summary>).)+?)<\/summary>\s*<\/details>/g'
     replace: '- $1'
