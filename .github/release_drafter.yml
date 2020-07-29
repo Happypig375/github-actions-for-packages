@@ -1,0 +1,39 @@
+# https://github.com/marketplace/actions/release-drafter#configuration
+name-template: '$RESOLVED_VERSION xxx Update [Alpha|Beta]'
+tag-template: 'v$RESOLVED_VERSION'
+categories:
+  - title: '🌈 New Platform!'
+    labels:
+      - 'Type/Platform'
+  - title: '🚀 Features'
+    labels:
+      - 'Type/Enhancement'
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'Type/Bug'
+  - title: '🧰 Maintenance'
+    label: 'Type/Housekeeping'
+change-template: |
+  - $TITLE (#$NUMBER) @$AUTHOR'
+    $BODY
+no-changes-template: '* (No changes)'
+prerelease: true
+version-resolver:
+  major:
+    labels:
+      - 'Version/Major'
+  minor:
+    labels:
+      - 'Version/Minor'
+  patch:
+    labels:
+      - 'Version/Patch'
+  default: patch
+exclude-labels:
+  - 'Version/None'
+template: |
+  ## Changes from $PREVIOUS_TAG
+  $CHANGES
+  
+  ## Contributors
+  $CONTRIBUTORS
