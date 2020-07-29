@@ -1,4 +1,10 @@
 # https://github.com/marketplace/actions/release-drafter#configuration
+template: |
+  ## Changes from $PREVIOUS_TAG
+  $CHANGES
+  
+  ## Contributors
+  $CONTRIBUTORS
 name-template: '$RESOLVED_VERSION xxx Update [Alpha|Beta]'
 tag-template: 'v$RESOLVED_VERSION'
 categories:
@@ -31,9 +37,3 @@ version-resolver:
   default: patch
 exclude-labels:
   - 'Version/None'
-template: |
-  ## Changes from $PREVIOUS_TAG
-  $CHANGES
-  
-  ## Contributors
-  $CONTRIBUTORS
