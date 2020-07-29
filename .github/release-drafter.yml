@@ -40,3 +40,6 @@ version-resolver:
   default: patch
 exclude-labels:
   - 'Version/None'
+replacers:
+  - search: '/<details><summary>((?:(?!<details>|<summary>).)+)<\/summary>\s*<\/details>/g'
+    replace: '- $1'
